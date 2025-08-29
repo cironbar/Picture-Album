@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #008751;   /* Green from Nigeria's flag */
+  --secondary-color: #ffffff; /* White */
+  --accent-color: #000000;    /* Black */
+  --font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  line-height: 1.6;
+  background: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero img {
+  width: 100%;
+  display: block;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Weather */
+#weather {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#weather h2 .icon::after {
+  content: " ⛅"; /* Emoji for wide view */
+  font-size: 1.2rem;
+}
+
+.mobile-icon {
+  display: none;
+  width: 50px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .mobile-icon {
+    display: inline-block;
+  }
+
+  #weather h2 .icon::after {
+    content: ""; /* remove emoji on mobile */
+  }
+}
