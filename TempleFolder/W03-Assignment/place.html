@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nigeria</title>
+  <link rel="stylesheet" href="/place.css">
+  <script src="/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Nigeria</h1>
+    <nav>
+      <ul>
+        <li><a href="#history">History</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#weather">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Image -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/img2.jpg" media="(min-width: 1024px)">
+      <source srcset="images/img4.jpg" media="(min-width: 600px)">
+      <img src="images/img3.jpg" alt="A beautiful view of Lagos, Nigeria">
+    </picture>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section id="history">
+      <h2>History</h2>
+      <p>Nigeria, known as the "Giant of Africa," has a long history of ancient kingdoms such as Benin and Oyo. It gained independence from Britain in 1960 and has since grown into one of Africa’s most influential nations.</p>
+    </section>
+
+    <section id="culture">
+      <h2>Culture</h2>
+      <p>Nigeria is home to over 250 ethnic groups including Yoruba, Igbo, and Hausa. Its culture is vibrant, celebrated through festivals, Nollywood films, Afrobeats music, and delicious foods such as jollof rice and suya.</p>
+    </section>
+
+    <section id="weather">
+      <h2>Weather <span class="icon"></span></h2>
+      <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+      <p><strong>Wind Speed:</strong> <span id="wind">15</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="chill">N/A</span></p>
+      <img src="images/mist.png" alt="Weather icon" class="mobile-icon">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Explore Nigeria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
