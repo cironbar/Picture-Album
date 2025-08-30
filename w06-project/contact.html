@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Academy | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tech Academy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Register / Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" required>
+        <option value="">-- Choose a Course --</option>
+        <option value="HTML & CSS Basics">HTML & CSS Basics</option>
+        <option value="JavaScript Essentials">JavaScript Essentials</option>
+        <option value="React Fundamentals">React Fundamentals</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-msg"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tech Academy</p>
+    <a class="a" href="references.html">References</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
